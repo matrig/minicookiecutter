@@ -528,8 +528,10 @@
 <hr />
 <p><strong>author</strong></p>
 <p>Your full name.</p>
-<p><strong>author_github_handle</strong></p>
-<p>Your github handle, i.e. <code>&lt;handle&gt;</code> in <code>https://github.com/&lt;handle&gt;</code></p>
+<p><strong>author_email</strong></p>
+<p>Your email address associated with your github account.</p>
+<p><strong>author_username</strong></p>
+<p>Your github handle, i.e. <code>&lt;handle&gt;</code> in <code>https://github.com/&lt;handle&gt;</code>.</p>
 <p><strong>project_name</strong></p>
 <p>Your project name. Should be equal to the name of your repository
 and it should only contain alphanumeric characters and <code>-</code>'s.</p>
@@ -541,6 +543,10 @@ replaced with <code>_</code>. This will be how you import your code later, e.g.<
 <p>Note: You can set <code>package_name</code> to <code>"src"</code> to place the Python module inside a <code>src</code> directory.</p>
 <p><strong>project_description</strong></p>
 <p>A short description of your project.</p>
+<p><strong>git_repo</strong></p>
+<p><code>"y"</code> or <code>"n"</code>. Whether you want to create a local git repo for the project.</p>
+<p><strong>git_server</strong></p>
+<p>In case you want to use another git service than github, you can specify it here. The default is <code>github.com</code>.</p>
 <p><strong>mkdocs</strong></p>
 <p><code>"y"</code> or <code>"n"</code>. Adds <a href="https://www.mkdocs.org/">MkDocs</a>
 documentation to your project. This includes automatically parsing your docstrings and adding them to the documentation. Documentation will be deployed to the <code>gh-pages</code> branch.</p>
