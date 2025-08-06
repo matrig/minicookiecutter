@@ -317,8 +317,53 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Quickstart">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-actions-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Actions Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub Actions Features">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#continuous-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Continuous Integration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Documentation Deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-scanning" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Security Scanning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#professional-benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Professional Benefits
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#acknowledgements" class="md-nav__link">
@@ -568,8 +613,53 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Quickstart">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-actions-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Actions Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub Actions Features">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#continuous-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Continuous Integration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Documentation Deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-scanning" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Security Scanning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#professional-benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Professional Benefits
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#acknowledgements" class="md-nav__link">
@@ -621,6 +711,8 @@
 <li>Testing with <a href="https://docs.pytest.org/en/7.1.x/">pytest</a></li>
 <li>Documentation with <a href="https://www.mkdocs.org/">MkDocs</a></li>
 <li>Compatibility testing for multiple versions of Python with <a href="https://github.com/tox-dev/tox-uv">tox-uv</a></li>
+<li><strong>GitHub Actions CI/CD</strong> with automated testing, documentation deployment, and security scanning</li>
+<li><strong>Enterprise GitHub support</strong> with SSH-first authentication</li>
 </ul>
 <h2 id="quickstart">Quickstart<a class="headerlink" href="#quickstart" title="Permanent link">&para;</a></h2>
 <p>On your local machine, navigate to the directory in which you want to create a project directory, and run the following command:</p>
@@ -630,7 +722,41 @@
 <pre><code class="language-bash">pip install cookiecutter
 cookiecutter https://github.com/matrig/minicookiecutter.git
 </code></pre>
-<p>Follow the prompts to configure your project. Once completed, a new directory containing your project will be created. Then navigate into your newly created project directory and follow the instructions in the <code>README.md</code> to complete the setup of your project.</p>
+<p>Follow the prompts to configure your project. You'll be asked about:</p>
+<ul>
+<li><strong>github_actions</strong> [y/n]: Enable GitHub Actions CI/CD workflows</li>
+<li><strong>codecov</strong> [y/n]: Enable Codecov integration for coverage reporting</li>
+<li><strong>mkdocs</strong> [y/n]: Include MkDocs documentation setup</li>
+<li><strong>git_repo</strong> [y/n]: Initialize git repository and optionally create remote</li>
+</ul>
+<p>Once completed, a new directory containing your project will be created. Then navigate into your newly created project directory and follow the instructions in the <code>README.md</code> to complete the setup of your project.</p>
+<h2 id="github-actions-features">GitHub Actions Features<a class="headerlink" href="#github-actions-features" title="Permanent link">&para;</a></h2>
+<p>When you enable GitHub Actions (<code>github_actions: y</code>), your generated project gets enterprise-grade CI/CD:</p>
+<h3 id="continuous-integration">🚀 <strong>Continuous Integration</strong><a class="headerlink" href="#continuous-integration" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Multi-Python testing (3.9-3.13) across Ubuntu, macOS, and Windows</li>
+<li>Automated code quality checks (ruff linting, formatting, mypy type checking)</li>
+<li>Coverage reporting with optional Codecov integration</li>
+</ul>
+<h3 id="documentation-deployment">📚 <strong>Documentation Deployment</strong><a class="headerlink" href="#documentation-deployment" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Automatic deployment to GitHub Pages when you push to main</li>
+<li>Seamless integration with MkDocs if enabled</li>
+</ul>
+<h3 id="security-scanning">🔒 <strong>Security Scanning</strong><a class="headerlink" href="#security-scanning" title="Permanent link">&para;</a></h3>
+<ul>
+<li>CodeQL analysis for security vulnerabilities</li>
+<li>Dependency scanning with Safety</li>
+<li>Weekly automated security checks</li>
+</ul>
+<h3 id="professional-benefits">📈 <strong>Professional Benefits</strong><a class="headerlink" href="#professional-benefits" title="Permanent link">&para;</a></h3>
+<ul>
+<li>✅ Prevents broken code from being merged</li>
+<li>✅ Maintains high code quality standards</li>
+<li>✅ Automatically keeps documentation up-to-date</li>
+<li>✅ Monitors for security issues</li>
+<li>✅ Works with GitHub.com and GitHub Enterprise</li>
+</ul>
 <h3 id="acknowledgements">Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permanent link">&para;</a></h3>
 <p>This project is based on <a href="https://github.com/patrickmineault/true-neutral-cookiecutter">https://github.com/patrickmineault/true-neutral-cookiecutter</a> and <a href="https://github.com/fpgmaas/cookiecutter-uv">https://github.com/fpgmaas/cookiecutter-uv</a>.</p>
 

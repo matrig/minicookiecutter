@@ -550,6 +550,17 @@ replaced with <code>_</code>. This will be how you import your code later, e.g.<
 <p><strong>mkdocs</strong></p>
 <p><code>"y"</code> or <code>"n"</code>. Adds <a href="https://www.mkdocs.org/">MkDocs</a>
 documentation to your project. This includes automatically parsing your docstrings and adding them to the documentation. Documentation will be deployed to the <code>gh-pages</code> branch.</p>
+<p><strong>github_actions</strong></p>
+<p><code>"y"</code> or <code>"n"</code>. Adds GitHub Actions CI/CD workflows to your project. When enabled, your project gets:</p>
+<ul>
+<li><strong>Continuous Integration</strong>: Automated testing across Python 3.9-3.13 and multiple operating systems (Ubuntu, macOS, Windows)</li>
+<li><strong>Code Quality Checks</strong>: Automatic linting (ruff), formatting, and type checking (mypy)</li>
+<li><strong>Documentation Deployment</strong>: Automatic deployment to GitHub Pages when MkDocs is also enabled</li>
+<li><strong>Security Scanning</strong>: CodeQL analysis and dependency vulnerability scanning with weekly automated checks</li>
+</ul>
+<p>This adds <code>pytest-cov&gt;=4.0.0</code> to your dev dependencies for coverage reporting.</p>
+<p><strong>codecov</strong></p>
+<p><code>"y"</code> or <code>"n"</code>. Enables <a href="https://codecov.io/">Codecov</a> integration for coverage reporting. Only relevant if <code>github_actions</code> is also set to <code>"y"</code>. When enabled, your CI pipeline will automatically upload coverage reports to Codecov and provide coverage analysis on pull requests.</p>
 <hr />
 
 
